@@ -1,0 +1,56 @@
+body {
+  background: #141414;
+  color: whitesmoke;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  margin-bottom: 40px;
+}
+
+::-webkit-scrollbar {display:none;}
+
+.movie-row {
+  display: flex;
+  padding: 10px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+}
+
+.movie-list {
+  display: flex;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.movie-list:hover {
+  display: flex;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.movie-list:hover .overlay {
+  opacity: 1;
+}
+
+.movie-list:hover i {
+  color: red;
+}
+
+.overlay {
+  display: flex;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+
+}
+
+
+
