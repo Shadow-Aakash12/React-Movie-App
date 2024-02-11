@@ -1,9 +1,9 @@
 import React from 'react'
 
-const RemoveFavorites = (props) => {
+const RemoveFavorites = () => {
   return (
     <>
-      <span className='rem'>Remove Favorites <i class="fa-solid fa-heart-crack"></i></span>
+      <span className='rem'>Remove Favorites <i className="fa-solid fa-heart-crack"></i></span>
     </>
   )
 }
